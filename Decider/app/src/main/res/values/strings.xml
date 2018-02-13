@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Decider</string>
-    <string name="undecided">Click to Flip ^^</string>
-    <string name="flip">FLIP</string>
+    <string name="undecided">Click for Answers??</string>
+    <string name="flip">FATE</string>
     <string name="head">Just Do It</string>
     <string name="tails">Don\'t Do It</string>
 </resources>

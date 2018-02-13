@@ -22,7 +22,7 @@
         android:layout_alignParentBottom="true"
         android:gravity="center"
         android:text="@string/undecided"
-        android:textSize="54sp"
+        android:textSize="48sp"
         />
 
 </RelativeLayout>
