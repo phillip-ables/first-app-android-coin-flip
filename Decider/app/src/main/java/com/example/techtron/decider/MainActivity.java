@@ -1,4 +1,5 @@
 package com.example.techtron.decider;
+import java.util.Random;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,7 +20,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //implement the OnClickListener callback
     public void onClick(View view) {
         //do something
-        Toast.makeText(getApplicationContext(), "text", Toast.LENGTH_SHORT).show();
-
+        Random fate = new Random();
+        //returns one or zero
+        int fatesNumber = fate.nextInt(2);
+        if(fatesNumber < 0.5)
+            Toast.makeText(getApplicationContext(), "Tails: "+fatesNumber, Toast.LENGTH_SHORT).show();
+        else
+            Toast.makeText(getApplicationContext(), "Heads: " + fatesNumber, Toast.LENGTH_SHORT).show();
     }
 }
