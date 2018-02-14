@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //i need all my variables
     TextView textView;
     Button btnFate;
+    RelativeLayout mLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         textView = (TextView)findViewById(R.id.textView);
         btnFate = (Button)findViewById(R.id.btn_flip_activity);
+        mLayout = (RelativeLayout)findViewById(R.id.relativeLayout);
 
         textView.setText(R.string.undecided);
         btnFate.setOnClickListener(this);
@@ -33,8 +36,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Random fate = new Random();
         //returns one or zero
         int fatesNumber = fate.nextInt(2);
+        btnFate.setAlpha(0.5f)
         if (fatesNumber < 0.5) {
             textView.setText(R.string.head);
+            mLayout.setBackgroundDrawable(getResources().getDrawable(R.drawable.doit));
             Toast.makeText(getApplicationContext(), "Tails: " + fatesNumber, Toast.LENGTH_SHORT).show();
         } else
         {
