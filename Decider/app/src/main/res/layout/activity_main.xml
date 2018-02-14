@@ -22,7 +22,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:gravity="center"
-        android:textColor="red"
         android:text="@string/undecided"
         android:textSize="48sp"
         />

@@ -4,4 +4,5 @@
     <string name="flip">FATE</string>
     <string name="head">Just Do It</string>
     <string name="tails">Don\'t Do It</string>
+    <string name="red">#8A0707</string>
 </resources>
